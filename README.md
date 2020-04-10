@@ -1,6 +1,6 @@
-# ROS package to accomplish target center estimation.
+# ROS package to test ArUco marker.
 
-This package is to estimate the target center from ***Image*** messages.  
+This package is to estimate the target (ArUco marker) center from ***Image*** messages.  
 
 ## Dependencies
 1. Opencv  
@@ -52,3 +52,7 @@ After bag is finished, one output file **camera_data_raw.csv** would be generate
 (**List order**: time_stamp, id, x, y, z)   
 
 * Notice that if the image message is **compressed** type, we neet to republish image by using package **image_transport**, which can be specified in ***camera.launch***.  
+
+
+### Example Result
+<img src="https://github.com/tom13133/aruco_test/blob/master/images/aruco_marker.png" width="500">
