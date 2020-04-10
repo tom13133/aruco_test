@@ -1,15 +1,15 @@
 # ROS package to accomplish target center estimation.
 
-This package is to estimate the target center from ***camera*** messages.  
+This package is to estimate the target center from ***Image*** messages.  
 
 ## Dependencies
-1. Eigen3
+1. Opencv  
 
 ## Content
-1. Target center from Camera (sensor_msgs::ImageConstPtr)
+1. Target center from Image (sensor_msgs::ImageConstPtr)  
 
 ## 1. Target center from Camera (sensor_msgs::ImageConstPtr)
-In this module, we use ***ArUco*** marker for detection.
+In this module, we use ***ArUco*** marker for detection.  
 
 ### (a) Setup
 Before we start running the estimation module, there is two configuration files needed to be specfied.  
