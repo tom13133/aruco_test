@@ -1,0 +1,16 @@
+<!-- Filename: camera.launch -->
+<!-- Fileinfo: launch CameraProcessor_node -->
+
+<launch>
+
+    <arg name="node_name" default="CameraProcessor_node"/>
+    <arg name="pkg_name" value="aruco_test"/>
+    <arg name="local" default="true"/>
+
+
+    <node name="$(arg node_name)" pkg="$(arg pkg_name)" type="$(arg node_name)" output="screen" required="true">
+        <rosparam  command="load" file="$(find aruco_test)/config/camera_config.yaml"/>
+    </node>
+
+    <node name="republish" type="republish" pkg="image_transport" output="screen" args="compressed in:=/usb_cam/image_raw raw out:=/usb_cam/image_raw" /> 
+</launch>

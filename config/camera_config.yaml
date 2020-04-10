@@ -1,0 +1,11 @@
+topic: "/usb_cam/image_raw"
+intrinsic_parameter:
+  fx: 660.475770
+  fy: 660.431370
+  cx: 286.997907
+  cy: 235.907360
+distortion_parameter:
+  k: [0.088377, -0.202261, 0]
+  p: [-0.000519, -0.003010]
+edge_length: 0.4
+
